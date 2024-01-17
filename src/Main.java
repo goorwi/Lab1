@@ -163,24 +163,24 @@ public class Main {
             Sentenceable s;
             s = Caser.ModeOfText(1);
             System.out.println("---------------------------------");
-            System.out.println("Начальный вариант записи: \"кАк в преДложенИи\"");
-            s.change("кАк в преДложенИи");
+            System.out.println("Начальный вариант записи: \"кАк в. преДложенИи\"");
+            System.out.println("Результат: " + s.change("кАк в. преДложенИи"));
             s = Caser.ModeOfText(2);
             System.out.println("---------------------------------");
             System.out.println("Начальный вариант записи: \"Все стрОчнЫе\"");
-            s.change("Все стрОчнЫе");
+            System.out.println("Результат: " + s.change("Все стрОчнЫе"));
             s = Caser.ModeOfText(3);
             System.out.println("---------------------------------");
             System.out.println("Начальный вариант записи: \"все ПрописНые\"");
-            s.change("все ПрописНые");
+            System.out.println("Результат: " + s.change("все ПрописНые"));
             s = Caser.ModeOfText(4);
             System.out.println("---------------------------------");
             System.out.println("Начальный вариант записи: \"НачинАть c проПисНыХ\"");
-            s.change("НачинАть c проПисНыХ");
+            System.out.println("Результат: " + s.change("НачинАть c проПисНыХ"));
             s = Caser.ModeOfText(5);
             System.out.println("---------------------------------");
             System.out.println("Начальный вариант записи: \"Изменить РегиСтр\"");
-            s.change("Изменить РегиСтр");
+            System.out.println("Результат: " + s.change("Изменить РегиСтр"));
 
         }
         else {
@@ -201,7 +201,7 @@ public class Main {
             s = Caser.ModeOfText(method);
             System.out.println("---------------------------------");
             System.out.println("Начальный вариант записи: \"" + str + "\"");
-            s.change(str);
+            System.out.println("Результат: " + s.change(str));
         }
         System.out.println("---------------------------------\n");
 

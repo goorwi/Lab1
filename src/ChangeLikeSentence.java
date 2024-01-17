@@ -1,5 +1,5 @@
 public class ChangeLikeSentence implements Sentenceable{
-    public void change(String input){
+    public String change(String input){
         StringBuffer str = new StringBuffer(input);
 
         for (int i = 0; i < str.length(); i++) {
@@ -12,7 +12,6 @@ public class ChangeLikeSentence implements Sentenceable{
             }
             else str.replace(i,i+1,str.substring(i,i+1).toLowerCase());
         }
-
-        System.out.println("Предложения с заглавной буквы: " + str.toString());
+        return str.toString();
     }
 }

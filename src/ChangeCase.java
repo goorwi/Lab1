@@ -1,12 +1,11 @@
 public class ChangeCase implements Sentenceable{
-    public void change(String input){
+    public String change(String input){
         StringBuffer str = new StringBuffer(input);
         for (int i = 0;i < str.length(); i++){
             if (Character.isUpperCase(str.charAt(i))) str.replace(i,i+1,str.substring(i,i+1).toLowerCase());
             else if (Character.isLowerCase(str.charAt(i))) str.replace(i,i+1, str.substring(i,i+1).toUpperCase());
 
         }
-        System.out.println("Изменённый регистр: " + str.toString());
-
+        return str.toString();
     }
 }
